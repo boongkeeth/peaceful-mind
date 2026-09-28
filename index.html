@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Peaceful Mind</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="header">
+
+    <a href="#home" class="logo">
+      <span>🪷</span>
+      <b>Peaceful Mind</b>
+    </a>
+
+    <nav class="nav">
+
+      <a href="#meditation">
+        สมาธิ
+      </a>
+
+      <a href="#mala">
+        ลูกประคำ
+      </a>
+
+      <a href="#chanting">
+        สวดมนต์
+      </a>
+
+      <a href="#relax">
+        Relax
+      </a>
+
+    </nav>
+
+    <button
+      class="mobile-menu"
+      id="mobileMenu"
+    >
+      ☰
+    </button>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HOME
+    ========================== -->
+<img
+  class="hero-character"
+  src="https://raw.githubusercontent.com/peemaipompom-dotcom/peaceful-mind-assets/main/character-1.webp"
+  alt="Peaceful Mind character"
+>
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="hero-orb orb-1"></div>
+
+      <div class="hero-orb orb-2"></div>
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          A LITTLE MOMENT FOR YOU
+        </span>
+
+        <h1>
+          วันนี้…<br>
+          <span>พักใจสักครู่</span>
+        </h1>
+
+        <p>
+          พื้นที่เล็ก ๆ สำหรับทำบุญ นั่งสมาธิ สวดมนต์<br>
+          นับลูกประคำ และฟังเสียงผ่อนคลายไปพร้อมกับตัวเอง
+        </p>
+
+        <a
+          href="#meditation"
+          class="main-button"
+        >
+          เริ่มต้นพักใจ
+          <span>→</span>
+        </a>
+
+      </div>
+
+      <div class="hero-lotus">
+        🪷
+      </div>
+<div class="lotus-rain" id="lotusRain" aria-hidden="true"></div>
+    </section>
+
+
+    <!-- =========================
+         TODAY
+    ========================== -->
+
+    <section class="daily-wrap">
+
+      <div class="daily-card">
+
+        <div>
+
+          <span class="label">
+            TODAY'S MOMENT
+          </span>
+
+          <h2>
+            วันนี้ใจเป็นอย่างไร?
+          </h2>
+
+          <p id="dailyText">
+            ไม่ต้องรีบ แค่หายใจช้า ๆ และอยู่กับปัจจุบัน
+          </p>
+
+        </div>
+
+        <button
+          class="soft-button"
+          id="changeDaily"
+        >
+          เปลี่ยนข้อความ ✨
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <section class="home-menu">
+
+      <div class="menu-grid">
+
+        <a
+          href="#good-deed"
+          class="menu-card"
+        >
+
+          <div class="menu-icon">
+            🙏
+          </div>
+
+          <div>
+
+            <h3>
+              ทำบุญ
+            </h3>
+
+            <small>
+              Good Deeds
+            </small>
+
+          </div>
+
+        </a>
+
+
+        <a
+          href="#meditation"
+          class="menu-card"
+        >
+
+          <div class="menu-icon">
+            🧘
+          </div>
+
+          <div>
+
+            <h3>
+              สมาธิ
+            </h3>
+
+            <small>
+              Meditation
+            </small>
+
+          </div>
+
+        </a>
+
+
+        <a
+          href="#mala"
+          class="menu-card"
+        >
+
+          <div class="menu-icon">
+            📿
+          </div>
+
+          <div>
+
+            <h3>
+              ลูกประคำ
+            </h3>
+
+            <small>
+              Mala Counter
+            </small>
+
+          </div>
+
+        </a>
+
+
+        <a
+          href="#chanting"
+          class="menu-card"
+        >
+
+          <div class="menu-icon">
+            🙏
+          </div>
+
+          <div>
+
+            <h3>
+              สวดมนต์
+            </h3>
+
+            <small>
+              Chanting
+            </small>
+
+          </div>
+
+        </a>
+
+      </div>
+
+
+      <a
+        href="#relax"
+        class="relax-card"
+      >
+
+        <div class="relax-left">
+
+          <div class="menu-icon">
+            🎧
+          </div>
+
+          <div>
+
+            <h3>
+              Relax
+            </h3>
+
+            <small>
+              เสียงผ่อนคลาย
+            </small>
+
+          </div>
+
+        </div>
+
+        <div class="relax-sounds">
+          ♪ Rain　♪ Forest　♪ Water　♪ Bells　♪ Guanyin
+        </div>
+
+      </a>
+
+    </section>
+
+
+    <!-- =========================
+         WORLD GOOD DEEDS
+    ========================== -->
+
+    <div class="world-deed-note-wrap">
+
+      <button
+        class="world-deed-note"
+        id="openWorldDeeds"
+      >
+
+        <span class="note-pin">📌</span>
+
+        <span class="note-icon">🪷</span>
+
+        <strong>
+          บันทึกความดี
+        </strong>
+
+        <small>
+          ของชาวโลก
+        </small>
+
+        <span class="note-arrow">
+          ↗
+        </span>
+
+      </button>
+
+    </div>
+
+
+    <!-- =========================
+         WORLD GOOD DEEDS POPUP
+    ========================== -->
+
+    <div
+      class="world-deed-modal"
+      id="worldDeedModal"
+    >
+
+      <div class="world-deed-overlay"></div>
+
+      <div class="world-deed-card">
+
+        <button
+          class="world-deed-close"
+          id="closeWorldDeeds"
+        >
+          ×
+        </button>
+
+        <div class="world-deed-header">
+
+          <div class="world-deed-flower">
+            🪷
+          </div>
+
+          <span>
+            WORLD GOOD DEEDS
+          </span>
+
+          <h2>
+            บันทึกความดีของชาวโลก
+          </h2>
+
+          <p>
+            เรื่องเล็ก ๆ ที่ทำให้โลกน่าอยู่ขึ้น<br>
+            ทีละหนึ่งความดี 🌿
+          </p>
+
+        </div>
+
+
+        <div
+          class="deed-list"
+          id="worldDeedList"
+        >
+
+          <div class="deed-card">
+
+            <div class="deed-card-top">
+              <span>🪷 Anonymous</span>
+              <small>วันนี้</small>
+            </div>
+
+            <p>
+              วันนี้ฉันช่วยแม่ทำอาหาร 🌷
+            </p>
+
+          </div>
+
+
+          <div class="deed-card">
+
+            <div class="deed-card-top">
+              <span>🌿 Anonymous</span>
+              <small>วันนี้</small>
+            </div>
+
+            <p>
+              วันนี้ฉันเก็บขยะที่สวนใกล้บ้าน
+            </p>
+
+          </div>
+
+
+          <div class="deed-card">
+
+            <div class="deed-card-top">
+              <span>☀️ Anonymous</span>
+              <small>เมื่อวาน</small>
+            </div>
+
+            <p>
+              วันนี้ฉันซื้อข้าวให้คนที่ไม่มีเงิน
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <button
+          class="write-deed-button"
+          id="writeWorldDeed"
+        >
+          ＋ เขียนความดีของฉัน
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+     MEDITATION
+========================= -->
+
+<section
+  class="section"
+  id="meditation"
+>
+
+  <div class="section-title">
+
+    <span>
+      01 — MEDITATION
+    </span>
+
+    <h2>
+      นั่งสมาธิ
+    </h2>
+
+    <p>
+      กำหนดลมหายใจ และให้เวลาตัวเองได้พัก
+    </p>
+
+  </div>
+
+
+  <div class="meditation-box">
+
+
+    <!-- BREATHING AREA -->
+
+    <div
+      class="meditation-breathing"
+      id="meditationBreathing"
+    >
+
+      <div
+        class="breathing-circle"
+        id="breathingCircle"
+      >
+
+        <div class="breathing-inner">
+
+          <div
+            class="breathing-word"
+            id="breathingWord"
+          >
+            พร้อมเริ่ม
+          </div>
+
+          <strong id="timer">
+            05:00
+          </strong>
+
+          <small id="timerStatus">
+            นั่งให้สบาย แล้วค่อย ๆ หายใจ
+          </small>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- TIMER CONTROL -->
+
+    <div class="timer-area">
+
+
+      <div class="meditation-guide">
+
+        <span class="meditation-guide-icon">
+          🌿
+        </span>
+
+        <div>
+
+          <strong>
+            อยู่กับลมหายใจ
+          </strong>
+
+          <p id="breathingGuide">
+            เมื่อเริ่มแล้ว วงกลมจะค่อย ๆ ขยายและหด
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="time-buttons">
+
+        <button
+          class="time-button active"
+          data-time="5"
+          type="button"
+        >
+          5 นาที
+        </button>
+
+        <button
+          class="time-button"
+          data-time="10"
+          type="button"
+        >
+          10 นาที
+        </button>
+
+        <button
+          class="time-button"
+          data-time="15"
+          type="button"
+        >
+          15 นาที
+        </button>
+
+        <button
+          class="time-button"
+          data-time="30"
+          type="button"
+        >
+          30 นาที
+        </button>
+
+      </div>
+
+
+      <button
+        class="main-button full"
+        id="startTimer"
+        type="button"
+      >
+        เริ่มสมาธิ
+      </button>
+
+
+      <button
+        class="reset-button"
+        id="resetTimer"
+        type="button"
+      >
+        เริ่มใหม่
+      </button>
+
+
+    </div>
+
+  </div>
+
+</section>
+<!-- =========================
+     MALA
+========================= -->
+
+<section class="section" id="mala">
+
+  <div class="section-title">
+
+    <span>
+      02 — MALA COUNTER
+    </span>
+
+    <h2>
+      นับลูกประคำ
+    </h2>
+
+    <p>
+      ค่อย ๆ นับไปทีละเม็ด พร้อมอยู่กับลมหายใจ
+    </p>
+
+  </div>
+
+
+  <div class="mala-box">
+
+    <div class="mala-counter-number">
+      <strong id="malaCount">0</strong>
+      <span>/ 108</span>
+    </div>
+
+
+    <!-- วงลูกประคำ -->
+    <div class="mala-circle" id="malaCircle">
+
+      <div
+        class="mala-string"
+        id="malaString">
+      </div>
+
+
+      <!-- ปุ่มรูปดาวตรงกลาง -->
+      <button
+        class="mala-center-button"
+        id="addMala"
+        type="button">
+
+        <span class="mala-center-icon">
+          ✦
+        </span>
+
+        <span>
+          นับ 1 เม็ด
+        </span>
+
+      </button>
+
+    </div>
+
+
+    <p
+      class="mala-message"
+      id="malaMessage">
+
+      แตะตรงกลางเพื่อเริ่มนับลูกประคำ 🪷
+
+    </p>
+
+
+    <div class="mala-buttons">
+
+      <button
+        class="soft-button"
+        id="minusMala"
+        type="button">
+
+        − 1
+
+      </button>
+
+
+      <button
+        class="main-button"
+        id="resetMala"
+        type="button">
+
+        เริ่มรอบใหม่
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+   
+
+
+<!-- =========================
+     CHANTING
+========================= -->
+
+<section
+  class="section"
+  id="chanting"
+>
+
+  <div class="section-title">
+
+    <span>
+      03 — CHANTING
+    </span>
+
+    <h2>
+      บทสวดมนต์
+    </h2>
+
+    <p>
+      เลือกบทสวดที่ต้องการอ่าน แล้วค่อย ๆ สวดไปพร้อมกับลมหายใจ
+    </p>
+
+  </div>
+
+
+  <!-- =========================
+       CHANT CARDS
+  ========================== -->
+
+  <div class="chant-grid">
+
+
+    <!-- =========================
+         01 NAMO
+    ========================== -->
+
+    <div class="chant-card">
+
+      <div class="chant-icon">
+        🙏
+      </div>
+
+      <h3>
+        นะโม 3 จบ
+      </h3>
+
+      <p>
+        บทเริ่มต้นสำหรับการสวดมนต์
+      </p>
+
+      <button
+        class="read-chant"
+        type="button"
+        data-chant="namo"
+      >
+        อ่านบทสวด →
+      </button>
+
+    </div>
+
+
+    <!-- =========================
+         02 ITIPISO
+    ========================== -->
+
+    <div class="chant-card">
+
+      <div class="chant-icon">
+        🪷
+      </div>
+
+      <h3>
+        อิติปิโสฯ
+      </h3>
+
+      <p>
+        พุทธคุณ ธรรมคุณ และสังฆคุณ
+      </p>
+
+      <button
+        class="read-chant"
+        type="button"
+        data-chant="itipiso"
+      >
+        อ่านบทสวด →
+      </button>
+
+    </div>
+
+
+    <!-- =========================
+         03 PAHUNG
+    ========================== -->
+
+    <div class="chant-card">
+
+      <div class="chant-icon">
+        🛡️
+      </div>
+
+      <h3>
+        พาหุงมหากา
+      </h3>
+
+      <p>
+        บทสวดพาหุง ชัยมงคล 8 คาถา
+      </p>
+
+      <button
+        class="read-chant"
+        type="button"
+        data-chant="pahung"
+      >
+        อ่านบทสวด →
+      </button>
+
+    </div>
+
+
+    <!-- =========================
+         04 METTA
+    ========================== -->
+
+    <div class="chant-card">
+
+      <div class="chant-icon">
+        🌿
+      </div>
+
+      <h3>
+        แผ่เมตตาให้สรรพสัตว์
+      </h3>
+
+      <p>
+        ส่งความปรารถนาดีให้สรรพสัตว์ทั้งหลาย
+      </p>
+
+      <button
+        class="read-chant"
+        type="button"
+        data-chant="metta-all"
+      >
+        อ่านบทสวด →
+      </button>
+
+    </div>
+
+
+    <!-- =========================
+         05 SELF METTA
+    ========================== -->
+
+    <div class="chant-card">
+
+      <div class="chant-icon">
+        💗
+      </div>
+
+      <h3>
+        คาถาแผ่เมตตาตนเอง
+      </h3>
+
+      <p>
+        ตั้งจิตเมตตาและปรารถนาดีต่อตัวเอง
+      </p>
+
+      <button
+        class="read-chant"
+        type="button"
+        data-chant="metta-self"
+      >
+        อ่านบทสวด →
+      </button>
+
+    </div>
+
+
+    <!-- =========================
+         06 MAHA KARUNIKO
+    ========================== -->
+
+    <div class="chant-card">
+
+      <div class="chant-icon">
+        🙏
+      </div>
+
+      <h3>
+        มหาการุณิโก
+      </h3>
+
+      <p>
+        บทสวดมหาการุณิโกและบทชัยมงคล
+      </p>
+
+      <button
+        class="read-chant"
+        type="button"
+        data-chant="mahakaruniko"
+      >
+        อ่านบทสวด →
+      </button>
+
+    </div>
+
+
+    <!-- =========================
+         07 BEFORE BED
+    ========================== -->
+
+    <div class="chant-card">
+
+      <div class="chant-icon">
+        ✨
+      </div>
+
+      <h3>
+        บทสวดก่อนนอน
+      </h3>
+
+      <p>
+        ปิดวันอย่างสงบ ก่อนพักผ่อน
+      </p>
+
+      <button
+        class="read-chant"
+        type="button"
+        data-chant="before-bed"
+      >
+        อ่านบทสวด →
+      </button>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CHANTING MODAL
+===================================================== -->
+
+<div
+  class="modal"
+  id="chantModal"
+>
+
+  <div
+    class="modal-bg"
+    id="chantModalBg"
+  ></div>
+
+
+  <div
+    class="modal-box chant-modal-box"
+  >
+
+    <button
+      class="close-modal"
+      id="closeModal"
+      type="button"
+      aria-label="ปิด"
+    >
+      ×
+    </button>
+
+
+    <span>
+      บทสวดมนต์
+    </span>
+
+
+    <h2
+      id="modalTitle"
+    ></h2>
+
+
+    <div
+      id="modalContent"
+      class="modal-content chant-modal-content"
+    >
+
+
+      <!-- =================================================
+           NAMO 3
+      ================================================== -->
+
+      <div
+        class="chant-reading"
+        style="display:none; flex-direction:column; align-items:stretch; width:100%;"
+        data-content="namo"
+      >
+
+        <div class="chant-line">
+          นะโม ตัสสะ ภะคะวะโต
+        </div>
+
+        <div class="chant-line">
+          อะระหะโต สัมมาสัมพุทธัสสะ
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          นะโม ตัสสะ ภะคะวะโต
+        </div>
+
+        <div class="chant-line">
+          อะระหะโต สัมมาสัมพุทธัสสะ
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          นะโม ตัสสะ ภะคะวะโต
+        </div>
+
+        <div class="chant-line">
+          อะระหะโต สัมมาสัมพุทธัสสะ
+        </div>
+
+      </div>
+
+
+
+      <!-- =================================================
+           ITIPISO
+      ================================================== -->
+
+      <div
+        class="chant-reading"
+        style="display:none; flex-direction:column; align-items:stretch; width:100%;"
+        data-content="itipiso"
+      >
+
+        <h4>
+          บทสวดอิติปิโสฯ
+        </h4>
+
+
+        <div class="chant-subtitle">
+          พุทธคุณ
+        </div>
+
+        <div class="chant-line">
+          อิติปิ โส ภะคะวา อะระหัง สัมมาสัมพุทโธ
+        </div>
+
+        <div class="chant-line">
+          วิชชาจะระณะสัมปันโน สุคะโต โลกะวิทู
+        </div>
+
+        <div class="chant-line">
+          อะนุตตะโร ปุริสะทัมมะสาระถิ
+        </div>
+
+        <div class="chant-line">
+          สัตถา เทวะมะนุสสานัง พุทโธ ภะคะวาติ
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-subtitle">
+          ธรรมคุณ
+        </div>
+
+        <div class="chant-line">
+          สวากขาโต ภะคะวา ธัมโม
+        </div>
+
+        <div class="chant-line">
+          สันทิฏฐิโก อะกาลิโก เอหิปัสสิโก
+        </div>
+
+        <div class="chant-line">
+          โอปะนะยิโก ปัจจัตตัง เวทิตัพโพ วิญญูหีติ
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-subtitle">
+          สังฆคุณ
+        </div>
+
+        <div class="chant-line">
+          สุปะฏิปันโน ภะคะวะโต สาวะกะสังโฆ
+        </div>
+
+        <div class="chant-line">
+          อุชุปะฏิปันโน ภะคะวะโต สาวะกะสังโฆ
+        </div>
+
+        <div class="chant-line">
+          ญายะปะฏิปันโน ภะคะวะโต สาวะกะสังโฆ
+        </div>
+
+        <div class="chant-line">
+          สามีจิปะฏิปันโน ภะคะวะโต สาวะกะสังโฆ
+        </div>
+
+        <div class="chant-line">
+          ยะทิทัง จัตตาริ ปุริสะยุคานิ อัฏฐะ ปุริสะปุคคะลา
+        </div>
+
+        <div class="chant-line">
+          เอสะ ภะคะวะโต สาวะกะสังโฆ
+        </div>
+
+        <div class="chant-line">
+          อาหุเนยโย ปาหุเนยโย ทักขิเณยโย
+        </div>
+
+        <div class="chant-line">
+          อัญชะลีกะระณีโย อะนุตตะรัง ปุญญะเขตตัง โลกัสสาติ
+        </div>
+
+      </div>
+
+
+
+      <!-- =================================================
+           PAHUNG
+      ================================================== -->
+
+      <div
+        class="chant-reading"
+        style="display:none; flex-direction:column; align-items:stretch; width:100%;"
+        data-content="pahung"
+      >
+
+        <h4>
+          บทสวดพาหุง หรือ บทสวดพาหุงมหากา
+        </h4>
+
+
+        <div class="chant-paragraph">
+
+          พาหุงสะหัสสะมะภินิมมิตะสาวุธันตัง<br>
+          ครีเมขะลัง อุทิตะโฆ ระสะเสนะมารัง<br>
+          ทานาทิธัมมะวิธินา ชิตะวา มุนินโท<br>
+          ตันเตชะสา ภะวะตุ เต ชะยะมังคะลานิ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          มาราติเรกะมะภิยุชฌิตะสัพพะรัตติง<br>
+          โฆรัมปะนาฬะวะกะมักขะมะถัทธะยักขัง<br>
+          ขันตีสุทันตะวิธินา ชิตะวา มุนินโท<br>
+          ตันเตชะสา ภะวะตุ เต ชะยะมังคะลานิ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          นาฬาคิริง คะชะวะรัง อะติมัตตะภูตัง<br>
+          ทาวัคคิจักกะมะสะนีวะ สุทารุณันตัง<br>
+          เมตตัมพุเสกะวิธินา ชิตะวา มุนินโท<br>
+          ตันเตชะสา ภะวะตุ เต ชะยะมังคะลานิ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          อุกขิตตะขัคคะมะติหัตถะสุทารุณันตัง<br>
+          ธาวันติโยชะนะปะถังคุลิมาละวันตัง<br>
+          อิทธีภิสังขะตะมะโน ชิตะวา มุนินโท<br>
+          ตันเตชะสา ภะวะตุ เต ชะยะมังคะลานิ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          กัตตะวานะ กัฏฐะมุทะรัง อิวะ คัพภินียา<br>
+          จิญจายะ ทุฏฐะวะจะนัง ชะยะกายะมัชเฌ<br>
+          สันเตนะ โสมะวิธินา ชิตะวา มุนินโท<br>
+          ตันเตชะสา ภะวะตุ เต ชะยะมังคะลานิ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          สัจจัง วิหายะ มะติสัจจะกาวาทะเกตุง<br>
+          วาทาภิโรปิตะมะนัง อะติอันธะภูตัง<br>
+          ปัญญาปะทีปะชะลิโต ชิตะวา มุนินโท<br>
+          ตันเตชะสา ภะวะตุ เต ชะยะมังคะลานิ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          นันโทปะนันทะภุชะคัง วิพุธัง มะหิทธิง<br>
+          ปุตเตนะ เถระภุชะเคนะ ทะมาปะยันโต<br>
+          อิทธูปะเทสะวิธินา ชิตะวา มุนินโท<br>
+          ตันเตชะสา ภะวะตุ เต ชะยะมังคะลานิ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          ทุคคาหะทิฏฐิภุชะเคนะ สุทัฏฐะหัตถัง<br>
+          พรัหมัง วิสุทธิชุติมิทธิพะกาภิธานัง<br>
+          ญาณาคะเทนะ วิธินา ชิตะวา มุนินโท<br>
+          ตันเตชะสา ภะวะตุ เต ชะยะมังคะลานิ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          เอตาปิ พุทธะชะยะมังคะละอัฏฐะคาถา โย<br>
+          วาจะโน ทินะทิเน สะระเต มะตันที<br>
+          หิตวานะเนกะวิวิธานิ จุปัททะวานิ<br>
+          โมกขัง สุขัง อะธิคะเมยยะ นะโร สะปัญโญ
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =================================================
+           METTA ALL BEINGS
+      ================================================== -->
+
+      <div
+        class="chant-reading"
+        style="display:none; flex-direction:column; align-items:stretch; width:100%;"
+        data-content="metta-all"
+      >
+
+        <h4>
+          แผ่เมตตาให้สรรพสัตว์
+        </h4>
+
+
+        <div class="chant-line">
+          สัพเพ สัตตา
+        </div>
+
+        <div class="chant-translation">
+          สัตว์ทั้งหลาย ที่เป็นเพื่อนทุกข์ เกิด แก่ เจ็บ ตาย
+          ด้วยกันทั้งหมดทั้งสิ้น
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          อะเวรา โหนตุ
+        </div>
+
+        <div class="chant-translation">
+          จงเป็นสุขเป็นสุขเถิด อย่าได้มีเวรแก่กันและกันเลย
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          อัพยาปัชฌา โหนตุ
+        </div>
+
+        <div class="chant-translation">
+          จงเป็นสุขเป็นสุขเถิด อย่าได้พยาบาทเบียดเบียนซึ่งกันและกันเลย
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          อะนีฆา โหนตุ
+        </div>
+
+        <div class="chant-translation">
+          จงเป็นสุขเป็นสุขเถิด อย่าได้มีความทุกข์กายทุกข์ใจเลย
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          สุขี อัตตานัง ปะริหะรันตุ
+        </div>
+
+        <div class="chant-translation">
+          จงมีความสุขกายสุขใจ รักษาตนให้พ้นจากทุกข์ภัยทั้งสิ้นเถิดฯ
+        </div>
+
+      </div>
+
+
+
+      <!-- =================================================
+           METTA SELF
+      ================================================== -->
+
+      <div
+        class="chant-reading"
+        style="display:none; flex-direction:column; align-items:stretch; width:100%;"
+        data-content="metta-self"
+      >
+
+        <h4>
+          คาถาแผ่เมตตาตนเอง
+        </h4>
+
+
+        <div class="chant-line">
+          อะหัง สุขิโต โหมิ
+        </div>
+
+        <div class="chant-translation">
+          ขอให้ข้าพเจ้ามีความสุข
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          อะหัง นิททุกโข โหมิ
+        </div>
+
+        <div class="chant-translation">
+          ขอให้ข้าพเจ้าปราศจากความทุกข์
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          อะหัง อะเวโร โหมิ
+        </div>
+
+        <div class="chant-translation">
+          ขอให้ข้าพเจ้าปราศจากเวร
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          อะหัง อัพยาปัชโฌ โหมิ
+        </div>
+
+        <div class="chant-translation">
+          ขอให้ข้าพเจ้าปราศจากอุปสรรคอันตรายทั้งปวง
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          สุขี อัตตานัง ปะริหะรามิ
+        </div>
+
+        <div class="chant-translation">
+          ขอให้ข้าพเจ้าจงมีความสุขกายสุขใจ
+          รักษากายวาจาใจให้พ้นจากความทุกข์ภัยทั้งปวงเถิด
+        </div>
+
+      </div>
+
+
+
+      <!-- =================================================
+           MAHA KARUNIKO
+      ================================================== -->
+
+      <div
+        class="chant-reading"
+        style="display:none; flex-direction:column; align-items:stretch; width:100%;"
+        data-content="mahakaruniko"
+      >
+
+        <h4>
+          บทสวดมหาการุณิโก
+        </h4>
+
+
+        <div class="chant-paragraph">
+
+          มะหาการุณิโก นาโถ หิตายะ สัพพะปาณินัง<br>
+          ปูเรตวา ปาระมี สัพพา ปัตโต สัมโพธิมุตตะมัง<br>
+          เอเตนะ สัจจะวัชเชนะ โหตุ เต ชะยะมังคะลังฯ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          ชะยันโต โพธิยา มูเล สักยานัง นันทิวัฑฒะโน<br>
+          เอวัง ตวัง วิชะโย โหหิ ชะยัสสุ ชะยะมังคะเล<br>
+          อะปะราชิตะปัลลังเก สีเส ปะฐะวิโปกขะเร<br>
+          อะภิเสเก สัพพะ พุทธานัง อัคคัปปัตโต ปะโมทะติฯ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          สุนักขัตตัง สุมังคะลัง สุปะภาตัง สุหุฏฐิตัง<br>
+          สุขะโณ สุมุหุตโต จะ สุยิฏฐัง พรัมหมะจาริสุ<br>
+          ปะทักขิณัง กายะกัมมัง วาจากัมมัง ปะทักขิณัง<br>
+          ปะทักขิณัง มะโนกัมมัง ปะณิธีเต ปะทักขิณา<br>
+          ปะทักขิณานิ กัตวานะ ละภันตัตเถ ปะทักขิเณฯ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          ภะวะตุ สัพพะมังคะลัง รักขันตุ สัพพะเทวะตา<br>
+          สัพพะพุทธานุภาเวนะ สะทา โสตถี ภะวันตุ เตฯ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          ภะวะตุ สัพพะมังคะลัง รักขันตุ สัพพะเทวะตา<br>
+          สัพพะธัมมานุภาเวนะ สะทา โสตถี ภะวันตุ เตฯ
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          ภะวะตุ สัพพะมังคะลัง รักขันตุ สัพพะเทวะตา<br>
+          สัพพะสังฆานุภาเวนะ สะทา โสตถี ภะวันตุ เตฯ
+
+        </div>
+
+
+        <div class="chant-note">
+
+          <strong>
+            หมายเหตุ
+          </strong>
+
+          <p>
+            ถ้าสวดให้คนอื่น ใช้คำว่า “เต”
+            สวดให้ตัวเอง ใช้คำว่า “เม”
+          </p>
+
+          <p>
+            เต แปลว่า ท่าน<br>
+            เม แปลว่า ข้าพเจ้า
+          </p>
+
+        </div>
+
+
+        <div class="chant-note">
+
+          <strong>
+            ก่อนสวด
+          </strong>
+
+          <p>
+            กราบ 3 ครั้ง เสร็จแล้วสวดเฉพาะพุทธคุณดังต่อไปนี้
+          </p>
+
+        </div>
+
+
+        <div class="chant-paragraph">
+
+          อิติปิโส ภะคะวา อะระหัง สัมมาสัมพุทโธ<br>
+          วิชชา จาระณะสัมปันโน สุคะโต โลกะวิทู<br>
+          อะนุตตะโร ปุริสะทัมมะสาระถิ<br>
+          สัตถา เทวะมะนุสสานัง พุทโธ ภะคะวาติ
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =================================================
+           BEFORE BED
+      ================================================== -->
+
+      <div
+        class="chant-reading"
+        style="display:none; flex-direction:column; align-items:stretch; width:100%;"
+        data-content="before-bed"
+      >
+
+        <h4>
+          บทสวดก่อนนอน
+        </h4>
+
+
+        <div class="chant-line">
+          ขอให้คืนนี้เป็นคืนแห่งความสงบ
+        </div>
+
+
+        <div class="chant-gap"></div>
+
+
+        <div class="chant-line">
+          ขอให้กายและใจได้พักผ่อน
+        </div>
+
+        <div class="chant-line">
+          ขอให้พรุ่งนี้เป็นวันที่ดี
+        </div>
+
+        <div class="chant-line">
+          และขอให้ข้าพเจ้ามีสติอยู่กับปัจจุบัน
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+    <!-- =========================
+         RELAX
+    ========================== -->
+
+    <section
+      class="section"
+      id="relax"
+    >
+
+      <div class="section-title">
+
+        <span>
+          04 — RELAX
+        </span>
+
+        <h2>
+          เสียงผ่อนคลาย
+        </h2>
+
+        <p>
+          เลือกเสียงบรรยากาศเพื่อสร้างช่วงเวลาสงบของคุณ
+        </p>
+
+      </div>
+
+
+      <div class="player">
+
+        <div
+          class="sound-image"
+          id="soundImage"
+        >
+          🌧️
+        </div>
+
+
+        <div class="sound-info">
+
+          <span>
+            RELAXING SOUND
+          </span>
+
+          <h3 id="soundName">
+            เสียงฝนเบา ๆ
+          </h3>
+
+          <p id="soundDescription">
+            เลือกเสียงที่คุณอยากฟัง
+          </p>
+
+        </div>
+
+
+        <button
+          class="play-button"
+          id="playSound"
+          type="button"
+          aria-label="เล่นหรือหยุดเสียง"
+        >
+          ▶
+        </button>
+
+      </div>
+
+
+      <div class="sound-buttons">
+
+        <button
+          class="sound-button active"
+          data-sound="rain"
+          data-name="เสียงฝนเบา ๆ"
+          data-icon="🌧️"
+          type="button"
+        >
+          🌧️ Rain
+        </button>
+
+
+        <button
+          class="sound-button"
+          data-sound="forest"
+          data-name="เสียงป่าและธรรมชาติ"
+          data-icon="🌿"
+          type="button"
+        >
+          🌿 Forest
+        </button>
+
+
+        <button
+          class="sound-button"
+          data-sound="water"
+          data-name="เสียงสายน้ำ"
+          data-icon="💧"
+          type="button"
+        >
+          💧 Water
+        </button>
+
+
+        <button
+          class="sound-button"
+          data-sound="bells"
+          data-name="เสียงระฆังสมาธิ"
+          data-icon="🔔"
+          type="button"
+        >
+          🔔 Bells
+        </button>
+
+
+        <button
+          class="sound-button"
+          data-sound="guanyin"
+          data-name="เพลงเจ้าแม่กวนอิม"
+          data-icon="🪷"
+          type="button"
+        >
+          🪷 Guanyin
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         GOOD DEED
+    ========================== -->
+
+    <section
+      class="good-deed"
+      id="good-deed"
+    >
+
+      <div>
+
+        <span>
+          05 — GOOD DEED
+        </span>
+
+        <h2>
+          วันนี้ทำความดีอะไรบ้าง?
+        </h2>
+
+        <p>
+          บันทึกเรื่องเล็ก ๆ ที่ทำให้วันนี้มีความหมาย
+        </p>
+
+      </div>
+
+
+      <button
+        class="main-button"
+        id="goodDeed"
+      >
+        + บันทึกความดี
+      </button>
+
+    </section>
+
+
+    <!-- =========================
+         GOOD DEED POPUP
+    ========================== -->
+
+    <div
+      class="deed-modal"
+      id="deedModal"
+    >
+
+      <div class="deed-modal-bg"></div>
+
+      <div class="deed-modal-card">
+
+        <button
+          class="deed-close"
+          id="closeDeed"
+        >
+          ×
+        </button>
+
+        <div class="deed-flower">
+          🪷
+        </div>
+
+        <span class="deed-label">
+          TODAY'S GOOD DEED
+        </span>
+
+        <h2>
+          วันนี้คุณทำความดีอะไรบ้าง?
+        </h2>
+
+        <p>
+          เรื่องเล็ก ๆ ก็เป็นความดีที่มีความหมายได้นะ 🌿
+        </p>
+
+        <textarea
+          id="deedInput"
+          placeholder="วันนี้ฉัน..."
+          maxlength="300"
+        ></textarea>
+
+        <button
+          class="main-button deed-save"
+          id="saveDeed"
+        >
+          บันทึกความดี ✨
+        </button>
+
+        <div
+          class="saved-deed"
+          id="savedDeed"
+        ></div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+
+    <div>
+      🪷
+    </div>
+
+    <p>
+      Take a little moment for yourself.
+    </p>
+
+    <small>
+      Peaceful Mind
+    </small>
+
+  </footer>
+
+
+  <div
+    class="toast"
+    id="toast"
+  ></div>
+
+
+  <style>
+    /* 🪷 Lotus rain — floating like the star effect */
+    .lotus-rain {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    .lotus-rain .falling-lotus {
+      position: absolute;
+      top: -8vh;
+      left: 0;
+      font-size: var(--size);
+      line-height: 1;
+      opacity: var(--opacity);
+      filter: drop-shadow(0 3px 5px rgba(120, 80, 100, .10));
+      animation: lotusFall var(--duration) linear var(--delay) infinite;
+      will-change: transform;
+    }
+
+    @keyframes lotusFall {
+      0% {
+        transform: translate3d(var(--x), -10vh, 0) rotate(0deg);
+      }
+      35% {
+        transform: translate3d(calc(var(--x) + var(--sway)), 35vh, 0) rotate(90deg);
+      }
+      70% {
+        transform: translate3d(calc(var(--x) - var(--sway)), 70vh, 0) rotate(180deg);
+      }
+      100% {
+        transform: translate3d(var(--x), 112vh, 0) rotate(270deg);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .lotus-rain .falling-lotus {
+        font-size: calc(var(--size) * .82);
+      }
+    }
+  </style>
+
+  <script>
+    // Create a soft, continuous 🪷 rain across the whole page
+    (() => {
+      const rain = document.getElementById('lotusRain');
+      if (!rain) return;
+
+      const count = window.innerWidth <= 760 ? 12 : 20;
+
+      for (let i = 0; i < count; i++) {
+        const lotus = document.createElement('span');
+        lotus.className = 'falling-lotus';
+        lotus.textContent = '🪷';
+        lotus.style.setProperty('--x', `${Math.random() * 100}vw`);
+        lotus.style.setProperty('--sway', `${(Math.random() * 90 - 45).toFixed(0)}px`);
+        lotus.style.setProperty('--size', `${(10 + Math.random() * 12).toFixed(1)}px`);
+        lotus.style.setProperty('--opacity', `${(0.38 + Math.random() * 0.42).toFixed(2)}`);
+        lotus.style.setProperty('--duration', `${(8 + Math.random() * 8).toFixed(1)}s`);
+        lotus.style.setProperty('--delay', `${(-Math.random() * 14).toFixed(1)}s`);
+        rain.appendChild(lotus);
+      }
+    })();
+  </script>
+
+  <!-- เชื่อม JavaScript -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
