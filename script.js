@@ -1128,25 +1128,315 @@ function addOneMala() {
     );
 
   }
+    if (mala === maxMala) {
+  setTimeout(function () {
+    showBlessing108();
+  }, 250);
+}
 
+
+  /* =========================================================
+   108 BLESSING POPUP
+   ========================================================= */
+
+function showBlessing108() {
+
+  /* รูปพระจาก GitHub Assets */
+  const BUDDHA_108_IMAGE =
+    "https://raw.githubusercontent.com/boongkeeth/peaceful-mind-photo/main/buddha-108.png";
+
+
+  const existing =
+    document.getElementById("blessing108Overlay");
+
+  if (existing) {
+    existing.remove();
+  }
+
+
+  const overlay =
+    document.createElement("div");
+
+  overlay.id =
+    "blessing108Overlay";
+
+  overlay.style.cssText = `
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(70, 45, 55, 0.28);
+    backdrop-filter: blur(5px);
+  `;
+
+
+  const card =
+    document.createElement("div");
+
+  card.style.cssText = `
+    position: relative;
+    width: min(430px, 92vw);
+    padding: 18px 20px 28px;
+    border-radius: 30px;
+    text-align: center;
+    background: linear-gradient(
+      180deg,
+      #fffdf8 0%,
+      #fff4f7 100%
+    );
+    box-shadow:
+      0 18px 55px rgba(100, 65, 75, 0.22);
+    border:
+      2px solid rgba(245, 184, 207, 0.7);
+    animation:
+      blessing108Pop 0.4s ease;
+  `;
+
+
+  /* ปุ่มปิด */
+
+  const close =
+    document.createElement("button");
+
+  close.type =
+    "button";
+
+  close.textContent =
+    "×";
+
+  close.style.cssText = `
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,.85);
+    color: #8f6672;
+    font-size: 25px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2;
+  `;
+
+
+  /* รูปพระ */
+
+  const image =
+    document.createElement("img");
+
+  image.src =
+  "https://raw.githubusercontent.com/boongkeeth/peaceful-mind-photo/main/buddha-108.png";
+
+  image.alt =
+    "Peaceful Mind";
+
+
+  image.style.cssText = `
+    display: block;
+    width: min(320px, 78vw);
+    max-height: 45vh;
+    object-fit: contain;
+    margin: 0 auto 4px;
+    image-rendering: pixelated;
+  `;
+
+
+  /* สาธุ */
+
+  const title =
+    document.createElement("div");
+
+  title.textContent =
+    "สาธุ 🪷";
+
+
+  title.style.cssText = `
+    color: #c97893;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.2;
+  `;
+
+
+  /* ข้อความหลัก */
+
+  const message =
+    document.createElement("div");
+
+  message.textContent =
+    "สร้างบุญแล้ววันนี้";
+
+
+  message.style.cssText = `
+    margin-top: 6px;
+    color: #5d4a50;
+    font-size: 22px;
+    font-weight: 700;
+  `;
+
+
+  /* ข้อความรอง */
+
+  const sub =
+    document.createElement("div");
+
+  sub.textContent =
+    "ครบ 108 ลูกแล้ว ขอให้ใจเบาและเป็นสุขนะ 🩷";
+
+
+  sub.style.cssText = `
+    margin-top: 8px;
+    color: #8b777c;
+    font-size: 14px;
+    line-height: 1.6;
+  `;
+
+
+  /* ปุ่มอนุโมทนา */
+
+  const done =
+    document.createElement("button");
+
+  done.type =
+    "button";
+
+  done.textContent =
+    "อนุโมทนา 🪷";
+
+
+  done.style.cssText = `
+    margin-top: 18px;
+    padding: 11px 25px;
+    border: 0;
+    border-radius: 999px;
+    background:
+      linear-gradient(
+        135deg,
+        #d989a5,
+        #c97692
+      );
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+  `;
+
+
+  /* ใส่ทุกอย่างลง Card */
+
+  card.appendChild(close);
+  card.appendChild(image);
+  card.appendChild(title);
+  card.appendChild(message);
+  card.appendChild(sub);
+  card.appendChild(done);
+
+
+  /* ใส่ Card ลง Overlay */
+
+  overlay.appendChild(card);
+
+  document.body.appendChild(overlay);
+
+
+  /* ปิด Popup */
+
+  function closeBlessing() {
+
+    overlay.remove();
+
+  }
+
+
+  close.addEventListener(
+    "click",
+    closeBlessing
+  );
+
+
+  done.addEventListener(
+    "click",
+    closeBlessing
+  );
+
+
+  /* กดพื้นที่ด้านนอกเพื่อปิด */
+
+  overlay.addEventListener(
+    "click",
+    function (event) {
+
+      if (
+        event.target === overlay
+      ) {
+
+        closeBlessing();
+
+      }
+
+    }
+  );
+
+
+  /* Animation */
 
   if (
-    mala === maxMala
+    !document.getElementById(
+      "blessing108Style"
+    )
   ) {
 
-    setTimeout(
-      function () {
+    const style =
+      document.createElement("style");
 
-        showToast(
-          "ครบ 108 ลูกแล้ว 🙏✨"
-        );
+    style.id =
+      "blessing108Style";
 
-      },
-      250
+
+    style.textContent = `
+
+      @keyframes blessing108Pop {
+
+        from {
+
+          opacity: 0;
+
+          transform:
+            translateY(18px)
+            scale(.94);
+
+        }
+
+
+        to {
+
+          opacity: 1;
+
+          transform:
+            translateY(0)
+            scale(1);
+
+        }
+
+      }
+
+    `;
+
+
+        document.head.appendChild(
+      style
     );
 
   }
 
+  
+
+}
 }
 
 
